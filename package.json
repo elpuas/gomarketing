@@ -1,0 +1,16 @@
+{
+  "name": "go-marketing",
+	"version": "1.0.0",
+  "description": "A WordPress theme for marketing",
+  "author": {
+    "name": "ElPuas Digital Crafts",
+    "url": "https://elpuasdigitalcrafts.com/"
+  },
+  "scripts": {
+		"build": "wp-scripts build",
+		"start": "wp-scripts start"
+	},
+  "dependencies": {
+    "@wordpress/scripts": "^28.4.0"
+  }
+}

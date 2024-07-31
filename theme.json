@@ -1,0 +1,57 @@
+{
+	"version": 3,
+	"$schema": "https://schemas.wp.org/wp/6.6/theme.json",
+	"patterns": [
+		"gomarketing/header-default"
+	],
+	"settings": {
+		"color": {
+			"palette": [
+				{
+					"slug": "base",
+					"color": "#D02028",
+					"name": "Base"
+				},
+				{
+					"slug": "base-2",
+					"color": "#ffffff",
+					"name": "Base / Two"
+				},
+				{
+					"slug": "contrast",
+					"color": "#000000",
+					"name": "Contrast"
+				}
+			]
+		},
+		"layout": {
+			"contentSize": "1280px",
+			"wideSize": "1440px",
+			"allowCustomContentAndWideSize": true
+		}
+	},
+	"styles": {
+		"color": {
+			"background": "var(--wp--preset--color--base-2)",
+			"text": "var(--wp--preset--color--contrast)"
+		},
+		"blocks": {
+			"core/button": {
+				"variations": {
+					"fill" : {
+						"color": {
+							"background": "var(--wp--preset--color--contrast)",
+							"text": "var(--wp--preset--color--base-2)"
+						},
+						"border": {
+							"right": {
+								"color": "var(--wp--preset--color--contrast)",
+								"width": "2px"
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

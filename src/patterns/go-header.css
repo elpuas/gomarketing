@@ -1,0 +1,13 @@
+.go-header {
+    container-type: inline-size;
+    
+    .nk-awb-wrap-content {
+        max-width: 1240px;
+        margin: 0 auto;
+        padding-top: 2.25rem;
+
+        .wp-block-group:has(.wp-block-buttons) {
+            margin-top: 6.25rem; 
+        }
+    }
+}
