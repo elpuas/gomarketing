@@ -7,7 +7,28 @@
         padding-top: 2.25rem;
 
         .wp-block-group:has(.wp-block-buttons) {
-            margin-top: 6.25rem; 
+            margin-top: 6.25rem;
+            
+            .wp-block-image img{
+                max-width: 15.625rem;
+            }
+        }
+
+        .wp-block-buttons {
+            width: 100%;
+            max-width: 360px;
+        }
+    }
+
+    @container (min-width: 768px) {
+        .nk-awb-wrap-content {
+            padding-top: 2.25rem;
+
+            .wp-block-group:has(.wp-block-buttons) {
+                .wp-block-image img {
+                    max-width: 100%;
+                }
+            }
         }
     }
 }

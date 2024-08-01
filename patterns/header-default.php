@@ -1,9 +1,17 @@
+<?php
+/**
+ * Header Default Pattern
+ * 
+ * @package Go Marketing
+ */
+
+return <<<EOD
 <!-- wp:group {"tagName":"header","metadata":{"categories":["header"],"patternName":"gomarketing/header-default","name":"Header Default"},"align":"wide","className":"go-header","style":{"spacing":{"padding":{"top":"0px","bottom":"0px"},"blockGap":"0"}},"layout":{"type":"constrained"}} -->
 <header class="wp-block-group alignwide go-header" style="padding-top:0px;padding-bottom:0px">
-    <!-- wp:nk/awb {"type":"yt_vm_video","align":"full","video":"https://www.youtube.com/watch?v=MLpWrANjFbI","videoPosterPreview":"https://img.youtube.com/vi/MLpWrANjFbI/maxresdefault.jpg","videoMobile":true,"style":{"spacing":{"blockGap":"0"},"dimensions":{"minHeight":"500px"}}} -->
+    <!-- wp:nk/awb {"type":"yt_vm_video","align":"full","video":"https://www.youtube.com/watch?v=0tWsz4b0HXg","videoPosterPreview":"https://img.youtube.com/vi/0tWsz4b0HXg/maxresdefault.jpg","videoMobile":true,"style":{"spacing":{"blockGap":"0"},"dimensions":{"minHeight":"500px"}}} -->
     <div class="wp-block-nk-awb nk-awb alignfull" style="min-height:500px">
         <div class="nk-awb-wrap" data-awb-type="yt_vm_video"
-            data-awb-video="https://www.youtube.com/watch?v=MLpWrANjFbI" data-awb-video-mobile="true">
+            data-awb-video="https://www.youtube.com/watch?v=0tWsz4b0HXg" data-awb-video-mobile="true">
             <div class="nk-awb-inner"></div>
         </div>
         <div class="nk-awb-wrap-content">
@@ -47,3 +55,4 @@
     <!-- /wp:nk/awb -->
 </header>
 <!-- /wp:group -->
+EOD;

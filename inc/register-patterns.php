@@ -13,11 +13,6 @@ namespace GoMarketing;
  * @since 1.0.0
  */
 function gomarketing_register_patterns() {
-    ob_start();
-    get_template_part('patterns/header-default');
-    $block_pattern_content = ob_get_contents();
-    ob_end_clean();
-
     // Register the block pattern
     register_block_pattern( 
         'gomarketing/header-default', 
@@ -26,7 +21,19 @@ function gomarketing_register_patterns() {
             'categories'  => ['header', 'hero'],
             'source'      => 'theme',
             'description' => __( 'A hero section with navigation, a paragraph, a CTA button, and a background video.', 'gomarketing' ),
-            'content'     => $block_pattern_content,
+            'content'     => include get_stylesheet_directory() . '/patterns/header-default.php',
+            'blockTypes'  => ['core/template-part/header']
+        ]
+    );
+
+    register_block_pattern( 
+        'gomarketing/footer-default', 
+        [
+            'title'       => __( 'Footer Default', 'gomarketing' ),
+            'categories'  => ['footer', 'hero'],
+            'source'      => 'theme',
+            'description' => __( 'The Go Footer.', 'gomarketing' ),
+            'content'     => include get_stylesheet_directory() . '/patterns/footer-default.php',
             'blockTypes'  => ['core/template-part/header']
         ]
     );
