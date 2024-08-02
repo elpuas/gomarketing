@@ -1,3 +1,4 @@
-@import url('./patterns/go-header.css');
-@import url('./patterns/go-footer.css');
-@import url('./patterns/go-excerpt.css');
+@import url('./css/globals/globals.css');
+@import url('./css/patterns/go-header.css');
+@import url('./css/patterns/go-footer.css');
+@import url('./css/patterns/go-excerpt.css');

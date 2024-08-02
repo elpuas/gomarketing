@@ -2,6 +2,8 @@
     container-type: inline-size;
 
     .wp-block-group:is(.go-excerpt-wrapper) {
+        padding-top: 3.125rem !important;
+        padding-bottom: 3.125rem !important;
     }
 
     .wp-block-group:is(.go-excerpt-headline) {
@@ -13,7 +15,7 @@
             flex-wrap: wrap;
             justify-content: center;
         }
-        
+
         .go-excerpt-icon {
             flex: 1;
             min-width: 240px;
@@ -31,6 +33,8 @@
         color: var(--wp--preset--color--base) !important;
     }
 
-    @container (min-width: 768px) {
+    @container (min-width: 700px) {
+        padding-top: 5rem !important;
+        padding-bottom: 5rem !important;
     }
 }
