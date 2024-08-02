@@ -1,0 +1,36 @@
+.wp-block-group:is(.go-excerpt) {
+    container-type: inline-size;
+
+    .wp-block-group:is(.go-excerpt-wrapper) {
+    }
+
+    .wp-block-group:is(.go-excerpt-headline) {
+        max-width: 1024px;
+    }
+    .wp-block-group:is(.go-excerpt-icons) {
+
+        > .wp-block-group {
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        
+        .go-excerpt-icon {
+            flex: 1;
+            min-width: 240px;
+            width: 100%;
+        }
+
+        p {
+            max-width:150px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+
+    .icon-container.has-base-2-color:hover {
+        color: var(--wp--preset--color--base) !important;
+    }
+
+    @container (min-width: 768px) {
+    }
+}
