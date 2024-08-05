@@ -49,6 +49,18 @@ function gomarketing_register_patterns() {
             'blockTypes'  => ['core/group', 'core/post-content']
         ]
     );
+
+    register_block_pattern( 
+        'gomarketing/fifty-fifty', 
+        [
+            'title'       => __( 'Fifty-Fifty', 'gomarketing' ),
+            'categories'  => ['banner', 'featured', 'gomarketing/go-patterns'],
+            'source'      => 'theme',
+            'description' => __( 'The Go Fifty Fifty banner.', 'gomarketing' ),
+            'content'     => include get_stylesheet_directory() . '/patterns/fifty-fifty.php',
+            'blockTypes'  => ['core/column', 'core/post-content']
+        ]
+    );
 }
 
 // Register the block pattern on init
