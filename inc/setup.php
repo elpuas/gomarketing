@@ -19,3 +19,4 @@ function gomarketing_register_scripts() {
 }
 
 add_action( 'wp_enqueue_scripts', __NAMESPACE__ . '\gomarketing_register_scripts' );
+add_action( 'enqueue_block_editor_assets', __NAMESPACE__ . '\gomarketing_register_scripts' );

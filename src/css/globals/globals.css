@@ -2,3 +2,8 @@ main {
     margin-top: -1.25rem !important;
     margin-bottom: -1.25rem !important;
 }
+
+.gradient-bg-bw {
+    background: var(--wp--preset--color--black);
+    background: linear-gradient(180deg, var(--wp--preset--color--black) 20%, var(--wp--preset--color--white) 20%);
+}

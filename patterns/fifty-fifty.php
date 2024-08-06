@@ -6,8 +6,8 @@
  */
 
 return <<<EOD
-<!-- wp:group {"tagName":"section","metadata":{"name":"Fifty Fifty"},"className":"go-fifty-fifty","style":{"spacing":{"margin":{"top":"var:preset|spacing|40","bottom":"var:preset|spacing|40"}}},"layout":{"type":"constrained"}} -->
-<section class="wp-block-group go-fifty-fifty" style="margin-top:var(--wp--preset--spacing--40);margin-bottom:var(--wp--preset--spacing--40)"><!-- wp:columns {"verticalAlignment":"center","metadata":{"name":"Wrapper"}} -->
+<!-- wp:group {"tagName":"section","metadata":{"name":"Fifty Fifty"},"align":"full","className":"go-fifty-fifty","style":{"color":{"background":"#f3f2f2"},"spacing":{"padding":{"top":"var:preset|spacing|40","bottom":"var:preset|spacing|40"}}},"layout":{"type":"constrained"}} -->
+<section class="wp-block-group alignfull go-fifty-fifty has-background" style="background-color:#f3f2f2;padding-top:var(--wp--preset--spacing--40);padding-bottom:var(--wp--preset--spacing--40)"><!-- wp:columns {"verticalAlignment":"center","metadata":{"name":"Wrapper"}} -->
 <div class="wp-block-columns are-vertically-aligned-center"><!-- wp:column {"verticalAlignment":"center","width":"40%","className":"go-fifty-fifty-left"} -->
 <div class="wp-block-column is-vertically-aligned-center go-fifty-fifty-left" style="flex-basis:40%"><!-- wp:paragraph {"style":{"spacing":{"margin":{"bottom":"0"}}},"fontSize":"large"} -->
 <p class="has-large-font-size" style="margin-bottom:0">En Go! Marketing</p>
