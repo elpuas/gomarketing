@@ -61,6 +61,18 @@ function gomarketing_register_patterns() {
             'blockTypes'  => ['core/column', 'core/post-content']
         ]
     );
+
+    register_block_pattern( 
+        'gomarketing/count-up', 
+        [
+            'title'       => __( 'Count Up', 'gomarketing' ),
+            'categories'  => ['banner', 'featured', 'gomarketing/go-patterns'],
+            'source'      => 'theme',
+            'description' => __( 'The Go Count Up pattern.', 'gomarketing' ),
+            'content'     => include get_stylesheet_directory() . '/patterns/count-up.php',
+            'blockTypes'  => ['core/group', 'core/post-content']
+        ]
+    );
 }
 
 // Register the block pattern on init
