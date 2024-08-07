@@ -7,3 +7,8 @@ main {
     background: var(--wp--preset--color--black);
     background: linear-gradient(180deg, var(--wp--preset--color--black) 20%, var(--wp--preset--color--white) 20%);
 }
+
+.gradient-bg-gw {
+    background: #F7F7F7;
+    background: linear-gradient(180deg, #F7F7F7 50%, var(--wp--preset--color--white) 50%);
+}

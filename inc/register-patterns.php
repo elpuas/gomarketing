@@ -73,6 +73,18 @@ function gomarketing_register_patterns() {
             'blockTypes'  => ['core/group', 'core/post-content']
         ]
     );
+
+    register_block_pattern( 
+        'gomarketing/headline-with-video', 
+        [
+            'title'       => __( 'Headline with Video', 'gomarketing' ),
+            'categories'  => ['banner', 'featured', 'gomarketing/go-patterns'],
+            'source'      => 'theme',
+            'description' => __( 'The Go Headline with Video pattern.', 'gomarketing' ),
+            'content'     => include get_stylesheet_directory() . '/patterns/headline-with-video.php',
+            'blockTypes'  => ['core/group', 'core/post-content']
+        ]
+    );
 }
 
 // Register the block pattern on init

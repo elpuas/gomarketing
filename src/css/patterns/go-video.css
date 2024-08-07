@@ -1,0 +1,23 @@
+.wp-block-group {
+    &:is(.go-video) {
+        container-type: inline-size;
+
+        .go-video-wrapper {
+            max-width: var(--wp--style--global--content-size);
+            padding-right: var(--wp--style--root--padding-right);
+            padding-left: var(--wp--style--root--padding-left);
+        }
+
+        &.gradient-bg-gw {
+            background: #F7F7F7;
+            background: linear-gradient(180deg, #F7F7F7 80%, var(--wp--preset--color--white) 80%);
+        }
+
+        @container (min-width: 840px) {
+            &.gradient-bg-gw {
+                background: #F7F7F7;
+                background: linear-gradient(180deg, #F7F7F7 50%, var(--wp--preset--color--white) 50%);
+            }
+        }
+    }
+}
