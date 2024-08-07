@@ -1,0 +1,44 @@
+.wp-block-group:is(.go-count-up) {
+    container-type: inline-size;
+    
+    .go-count-up-wrapper {
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+
+        .wp-block-boldblocks-counting-number {
+            text-align: center;
+            width: 100%;
+            flex: 1;
+        }
+    }
+    
+    .go-count-fifty-fifty {
+        .wp-block-columns {
+            flex-wrap: wrap !important;
+            flex-direction: column;
+        }
+
+        .wp-block-image {
+            text-align: center;
+        }
+    }
+
+    @container (min-width: 840px) {
+        .go-count-fifty-fifty {
+            .wp-block-columns {
+                flex-wrap: nowrap !important;
+                flex-direction: row;
+            }
+
+            .wp-block-image {
+                text-align: center;
+            }
+        }
+
+        .go-count-up-wrapper {
+            flex-wrap: nowrap;
+            flex-direction: row;
+        }
+    }
+}

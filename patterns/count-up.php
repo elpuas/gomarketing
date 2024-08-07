@@ -49,8 +49,8 @@ return <<<EOD
 <!-- /wp:group --></div>
 <!-- /wp:group -->
 
-<!-- wp:group {"metadata":{"name":"Sub Section"},"align":"full","className":"gradient-bg-bw","style":{"spacing":{"padding":{"top":"var:preset|spacing|40"}}},"layout":{"type":"constrained"}} -->
-<div class="wp-block-group alignfull gradient-bg-bw" style="padding-top:var(--wp--preset--spacing--40)"><!-- wp:columns -->
+<!-- wp:group {"metadata":{"name":"Sub Section"},"align":"full","className":"gradient-bg-bw go-count-fifty-fifty","style":{"spacing":{"padding":{"top":"var:preset|spacing|40"}}},"layout":{"type":"constrained"}} -->
+<div class="wp-block-group alignfull gradient-bg-bw go-count-fifty-fifty" style="padding-top:var(--wp--preset--spacing--40)"><!-- wp:columns -->
 <div class="wp-block-columns"><!-- wp:column -->
 <div class="wp-block-column"><!-- wp:image {"id":95,"sizeSlug":"full","linkDestination":"none"} -->
 <figure class="wp-block-image size-full"><img src="https://gomarketing.local/wp-content/uploads/2024/08/Mask-group-1-jpg.avif" alt="" class="wp-image-95"/></figure>

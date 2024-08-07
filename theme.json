@@ -5,7 +5,8 @@
 		"gomarketing/header-default",
 		"gomarketing/footer-default",
 		"gomarketing/headline",
-		"gomarketing/fifty-fifty"
+		"gomarketing/fifty-fifty",
+		"gomarketing/count-up"
 	],
 	"settings": {
 		"color": {
