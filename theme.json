@@ -6,7 +6,10 @@
 		"gomarketing/footer-default",
 		"gomarketing/headline",
 		"gomarketing/fifty-fifty",
-		"gomarketing/count-up"
+		"gomarketing/count-up",
+		"gomarketing/headline-with-video",
+		"gomarketing/brands-carousel",
+		"gomarketing/home-pattern"
 	],
 	"settings": {
 		"color": {

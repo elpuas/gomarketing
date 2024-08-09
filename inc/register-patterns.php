@@ -85,6 +85,30 @@ function gomarketing_register_patterns() {
             'blockTypes'  => ['core/group', 'core/post-content']
         ]
     );
+
+    register_block_pattern( 
+        'gomarketing/brands-carousel', 
+        [
+            'title'       => __( 'Brands Carousel', 'gomarketing' ),
+            'categories'  => ['core/group', 'featured', 'gomarketing/go-patterns'],
+            'source'      => 'theme',
+            'description' => __( 'The brands carousel pattern', 'gomarketing' ),
+            'content'     => include get_stylesheet_directory() . '/patterns/brands-carousel.php',
+            'blockTypes'  => ['core/post-content']
+        ]
+    );
+
+    register_block_pattern( 
+        'gomarketing/home-pattern', 
+        [
+            'title'       => __( 'Home Pattern', 'gomarketing' ),
+            'categories'  => ['page', 'featured', 'gomarketing/go-patterns'],
+            'source'      => 'theme',
+            'description' => __( 'The pattern for the Homepage.', 'gomarketing' ),
+            'content'     => '<!-- wp:pattern {"slug":"gomarketing/headline"}	/--><!-- wp:pattern {"slug":"gomarketing/fifty-fifty"}	/--><!-- wp:pattern {"slug":"gomarketing/headline-with-video"}	/--><!-- wp:pattern {"slug":"gomarketing/count-up"}	/--><!-- wp:pattern {"slug":"gomarketing/brands-carousel"}	/-->',
+            'blockTypes'  => ['core/post-content']
+        ]
+    );
 }
 
 // Register the block pattern on init
