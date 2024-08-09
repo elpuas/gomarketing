@@ -12,3 +12,24 @@ main {
     background: #F7F7F7;
     background: linear-gradient(180deg, #F7F7F7 50%, var(--wp--preset--color--white) 50%);
 }
+
+.is-style-fill {
+    .wp-block-button__link {
+        animation: color-fill 1s forwards;
+        &:hover {
+            background-color: var(--wp--preset--color--base);
+            border-right-color: var(--wp--preset--color--contrast) !important;
+            transition: background-color 1000ms linear;
+        }
+    }
+}
+
+.wp-block-button {
+    .wp-block-button__link:is(.has-contrast-background-color) {
+        &:hover {
+            background-color: var(--wp--preset--color--base) !important;
+            border-right-color: var(--wp--preset--color--contrast) !important;
+            transition: background-color 1000ms linear;
+        }
+    }
+}

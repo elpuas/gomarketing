@@ -1,0 +1,40 @@
+.wp-block-group:is(.go-brands-carousel) {
+    container-type: inline-size;
+
+    .wp-block-group:has(.go-video-headline),
+    .wp-block-cb-carousel:is(.go-carousel)  {
+        max-width: var(--wp--style--global--content-size);
+        padding-right: var(--wp--style--root--padding-right);
+        padding-left: var(--wp--style--root--padding-left);
+    }
+
+    .wp-block-group:has(.go-video-headline) {
+        max-width: 840px;
+        margin: 0 auto;
+    }
+
+    .wp-block-cb-carousel:is(.go-carousel) {
+        text-align: center;
+
+        .slick-dots {
+            position: relative;
+            bottom: 0;
+            margin-top: 32px;
+
+            li {
+                button {
+                    background-color: #D9D9D9;
+                    &::before {
+                        content: none;
+                    }
+                }
+
+                &.slick-active {
+                    button {
+                        background-color: #000;
+                    }
+                }
+            }
+        }
+    }
+}   
