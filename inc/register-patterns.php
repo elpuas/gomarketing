@@ -109,6 +109,18 @@ function gomarketing_register_patterns() {
             'blockTypes'  => ['core/post-content']
         ]
     );
+
+    register_block_pattern( 
+        'gomarketing/team-card', 
+        [
+            'title'       => __( 'Team Card', 'gomarketing' ),
+            'categories'  => ['card', 'featured', 'gomarketing/go-patterns'],
+            'source'      => 'theme',
+            'description' => __( 'The Team Card Pattern.', 'gomarketing' ),
+            'content'     => include get_stylesheet_directory() . '/patterns/team-card.php',
+            'blockTypes'  => ['core/group', 'core/post-content']
+        ]
+    );
 }
 
 // Register the block pattern on init
