@@ -5,6 +5,8 @@
  * @package Go Marketing
  */
 
+$go_image_placeholder = get_stylesheet_directory_uri() . '/src/img/count-up-default.jpg';
+
 return <<<EOD
 <!-- wp:group {"tagName":"section","metadata":{"name":"Count Up Numbers"},"align":"full","className":"go-count-up","style":{"spacing":{"margin":{"top":"0","bottom":"0"},"padding":{"top":"var:preset|spacing|30"}}},"backgroundColor":"contrast","layout":{"type":"constrained"}} -->
 <section class="wp-block-group alignfull go-count-up has-contrast-background-color has-background" style="margin-top:0;margin-bottom:0;padding-top:var(--wp--preset--spacing--30)"><!-- wp:group {"metadata":{"name":"Count Up Wrapper"},"className":"go-count-up-wrapper","layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"space-between","verticalAlignment":"top"}} -->
@@ -53,7 +55,7 @@ return <<<EOD
 <div class="wp-block-group alignfull gradient-bg-bw go-count-fifty-fifty" style="padding-top:var(--wp--preset--spacing--40)"><!-- wp:columns -->
 <div class="wp-block-columns"><!-- wp:column -->
 <div class="wp-block-column"><!-- wp:image {"id":95,"sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image size-full"><img src="https://gomarketing.local/wp-content/uploads/2024/08/Mask-group-1-jpg.avif" alt="" class="wp-image-95"/></figure>
+<figure class="wp-block-image size-full"><img src="$go_image_placeholder" alt="" class="wp-image-95"/></figure>
 <!-- /wp:image --></div>
 <!-- /wp:column -->
 

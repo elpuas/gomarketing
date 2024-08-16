@@ -5,6 +5,8 @@
  * @package Go Marketing
  */
 
+$go_image_placeholder = get_stylesheet_directory_uri() . '/src/img/fifty-fifty-default.jpg';
+
 return <<<EOD
 <!-- wp:group {"tagName":"section","metadata":{"name":"Fifty Fifty"},"align":"full","className":"go-fifty-fifty","style":{"color":{"background":"#f3f2f2"},"spacing":{"padding":{"top":"var:preset|spacing|40","bottom":"var:preset|spacing|40"}}},"layout":{"type":"constrained"}} -->
 <section class="wp-block-group alignfull go-fifty-fifty has-background" style="background-color:#f3f2f2;padding-top:var(--wp--preset--spacing--40);padding-bottom:var(--wp--preset--spacing--40)"><!-- wp:columns {"verticalAlignment":"center","metadata":{"name":"Wrapper"}} -->
@@ -29,8 +31,8 @@ return <<<EOD
 <!-- /wp:column -->
 
 <!-- wp:column {"verticalAlignment":"center","className":"go-fifty-fifty-right"} -->
-<div class="wp-block-column is-vertically-aligned-center go-fifty-fifty-right"><!-- wp:image {"id":79,"sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image size-full"><img src="https://gomarketing.local/wp-content/uploads/2024/08/fifty-fifty-default-jpg.avif" alt="" class="wp-image-79"/></figure>
+<div class="wp-block-column is-vertically-aligned-center go-fifty-fifty-right"><!-- wp:image {"sizeSlug":"full","linkDestination":"none"} -->
+<figure class="wp-block-image size-full"><img src="$go_image_placeholder" alt="" class=""/></figure>
 <!-- /wp:image --></div>
 <!-- /wp:column --></div>
 <!-- /wp:columns --></section>

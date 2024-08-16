@@ -9,7 +9,12 @@
 		"gomarketing/count-up",
 		"gomarketing/headline-with-video",
 		"gomarketing/brands-carousel",
-		"gomarketing/home-pattern"
+		"gomarketing/home-pattern",
+		"gomarketing/team-card",
+		"go-team-pattern",
+		"go-banner-pattern",
+		"gomarketing/go-video-headline-pattern"
+
 	],
 	"settings": {
 		"color": {

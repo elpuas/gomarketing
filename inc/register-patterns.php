@@ -121,6 +121,42 @@ function gomarketing_register_patterns() {
             'blockTypes'  => ['core/group', 'core/post-content']
         ]
     );
+
+    register_block_pattern( 
+        'gomarketing/go-team-pattern', 
+        [
+            'title'       => __( 'Team Pattern', 'gomarketing' ),
+            'categories'  => ['banner', 'featured', 'gomarketing/go-patterns'],
+            'source'      => 'theme',
+            'description' => __( 'The pattern for the Go Team.', 'gomarketing' ),
+            'content'     => include get_stylesheet_directory() . '/patterns/about-page-pattern.php',
+            'blockTypes'  => ['core/group', 'core/post-content']
+        ]
+    );
+
+    register_block_pattern( 
+        'gomarketing/go-banner-pattern', 
+        [
+            'title'       => __( 'Go Banner Pattern', 'gomarketing' ),
+            'categories'  => ['banner', 'featured', 'gomarketing/go-patterns'],
+            'source'      => 'theme',
+            'description' => __( 'Go Banner with a Call to Action.', 'gomarketing' ),
+            'content'     => include get_stylesheet_directory() . '/patterns/go-banner.php',
+            'blockTypes'  => ['core/group', 'core/post-content']
+        ]
+    );
+
+    register_block_pattern( 
+        'gomarketing/go-video-headline-pattern', 
+        [
+            'title'       => __( 'Video & Headline Pattern', 'gomarketing' ),
+            'categories'  => ['banner', 'featured', 'gomarketing/go-patterns'],
+            'source'      => 'theme',
+            'description' => __( 'Video and Headline.', 'gomarketing' ),
+            'content'     => include get_stylesheet_directory() . '/patterns/video-headline.php',
+            'blockTypes'  => ['core/group', 'core/post-content']
+        ]
+    );
 }
 
 // Register the block pattern on init
