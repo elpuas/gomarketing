@@ -157,6 +157,31 @@ function gomarketing_register_patterns() {
             'blockTypes'  => ['core/group', 'core/post-content']
         ]
     );
+
+    register_block_pattern( 
+        'gomarketing/service-cards-pattern', 
+        [
+            'title'       => __( 'Service Cards Pattern', 'gomarketing' ),
+            'categories'  => ['banner', 'featured', 'gomarketing/go-patterns'],
+            'source'      => 'theme',
+            'description' => __( 'Service Cards with Icon, Headline and Link.', 'gomarketing' ),
+            'content'     => include get_stylesheet_directory() . '/patterns/service-cards.php',
+            'blockTypes'  => ['core/group', 'core/post-content']
+        ]
+    );
+
+    register_block_pattern( 
+        'gomarketing/services-pattern', 
+        [
+            'title'       => __( 'Single Services Pattern', 'gomarketing' ),
+            'categories'  => ['posts', 'featured', 'gomarketing/go-patterns'],
+            'source'      => 'theme',
+            'description' => __( 'The Single Services Pattern.', 'gomarketing' ),
+            'content'     => include get_stylesheet_directory() . '/patterns/services-single-pattern.php',
+            'blockTypes'  => ['core/post-content'],
+            'templateTypes' => ['single-post']
+        ]
+    );
 }
 
 // Register the block pattern on init

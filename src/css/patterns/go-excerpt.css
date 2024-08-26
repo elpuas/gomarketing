@@ -10,6 +10,8 @@
         max-width: 1024px;
     }
     .wp-block-group:is(.go-excerpt-icons) {
+        width: 100%;
+        max-width: 1024px;
 
         > .wp-block-group {
             flex-wrap: wrap;
