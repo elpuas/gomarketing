@@ -60,6 +60,12 @@ form {
     }
 }
 
+form > p {
+    grid-column: span 1;
+    margin: 0 auto;
+    text-align: center;
+}
+
 @media (min-width: 900px) {
     form {
         grid-template-columns: 1fr 1fr;
@@ -74,12 +80,6 @@ form {
             grid-column: span 2;
         }
     }
-}
-
-form > p {
-    grid-column: span 1;
-    margin: 0 auto;
-    text-align: center;
 }
 
 form input::placeholder,
