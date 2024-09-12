@@ -13,8 +13,9 @@
 		"gomarketing/team-card",
 		"go-team-pattern",
 		"go-banner-pattern",
-		"gomarketing/go-video-headline-pattern"
-
+		"gomarketing/go-video-headline-pattern",
+		"gomarketing/service-cards-pattern",
+		"gomarketing/services-pattern"
 	],
 	"settings": {
 		"color": {

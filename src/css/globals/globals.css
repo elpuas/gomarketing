@@ -33,3 +33,44 @@ main {
         }
     }
 }
+
+:where(.wp-site-blocks) > * {
+    margin-block-start: 0;
+}
+
+.wp-block-navigation:not(.has-background) {
+    .wp-block-navigation__responsive-container:is(.is-menu-open) {
+        height: 100vh;
+        background-color: var(--wp--preset--color--black);
+    
+        .wp-block-navigation__responsive-container-content,
+        .wp-block-navigation__responsive-close {
+            height: 100%;
+        }
+
+        .wp-block-navigation__responsive-container-content {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            ul {
+                justify-content: center;
+                align-items: center;
+
+                li {
+                    margin-bottom: 1.5rem;
+                }
+            }
+        }
+    }
+}
+
+body:has(.is-menu-open) {
+    overflow: hidden;
+
+    form {
+        position: relative;
+        z-index: -1;
+    }
+}
