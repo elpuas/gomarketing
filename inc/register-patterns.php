@@ -197,3 +197,30 @@ function register_pattern_categories() {
 }
 
 add_action( 'init', __NAMESPACE__ . '\register_pattern_categories' );
+
+/**
+ * Remove core block patterns
+ */
+function remove_core_patterns() {
+	remove_theme_support( 'core-block-patterns' );
+}
+
+add_action( 'after_setup_theme', __NAMESPACE__ . '\remove_core_patterns' );
+
+function unregister_all_twentytwentyfour_patterns() {
+    unregister_block_pattern( 'twentytwentyfour/banner-hero' );
+    unregister_block_pattern( 'twentytwentyfour/banner-project-description' );
+    unregister_block_pattern( 'twentytwentyfour/cta-content-image-on-right' );
+    unregister_block_pattern( 'twentytwentyfour/cta-pricing' );
+    unregister_block_pattern( 'twentytwentyfour/cta-rsvp' );
+    unregister_block_pattern( 'twentytwentyfour/cta-services-image-left' );
+    unregister_block_pattern( 'twentytwentyfour/cta-subscribe-centered' );
+    unregister_block_pattern( 'twentytwentyfour/footer-centered-logo-nav' );
+    unregister_block_pattern( 'twentytwentyfour/footer-colophon-3-col' );
+    unregister_block_pattern( 'twentytwentyfour/footer' );
+    unregister_block_pattern( 'twentytwentyfour/hidden-404' );
+    unregister_block_pattern( 'twentytwentyfour/hidden-comments' );
+    
+}
+
+add_action( 'wp_loaded', __NAMESPACE__ . '\unregister_all_twentytwentyfour_patterns', 999 );
